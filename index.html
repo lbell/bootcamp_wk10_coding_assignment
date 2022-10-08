@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wk 10 Coding Assignment</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </head>
+
+  <body>
+	  <div class="container">
+		<h1>Week 10 Coding Assignment</h1>
+      <p>Using HTML, Bootstrap, and JavaScript create a single page website that contains the following:</p>
+      <ul>
+        <li>A Bootstrap styled table representing your choice of data.</li>
+        <li>A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit.</li>
+      </ul>
+
+      <table class="table" id="main-table">
+        <thead>
+          <tr>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kermit</td>
+            <td>The Frog</td>
+            <td>OGBOSS@greentown.net</td>
+          </tr>
+          <tr>
+            <td>Fozzie</td>
+            <td>Bear</td>
+            <td>wokawoka@woka.hahaha</td>
+          </tr>
+          <tr>
+            <td>Miss</td>
+            <td>Piggy</td>
+            <td>muah@me.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mt-5"></div>
+    <div class="container">
+      <form id="the-form">
+        <div class="row">
+          <div class="mb-3 col-sm-3">
+            <label for="first" class="form-label">First</label>
+            <input type="text" class="form-control" id="first" placeholder="Firstname" />
+          </div>
+          <div class="mb-3 col-sm-3">
+            <label for="last" class="form-label">Last</label>
+            <input type="text" class="form-control" id="last" placeholder="Lastname" />
+          </div>
+          <div class="mb-3 col-sm-6">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+          </div>
+        </div>
+        <input id="form-submit" value="Submit" class="btn btn-primary" />
+      </form>
+      <div class="mt-5"></div>
+
+      <div id="alert-box"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
